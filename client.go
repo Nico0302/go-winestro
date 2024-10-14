@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
+	"strconv"
 	"time"
 )
 
@@ -30,11 +32,24 @@ func NewClient(uid int, user string, code string, shopID int) *Client {
 	}
 }
 
+func NewClientFromEnv() *Client {
+	uid, err := strconv.Atoi(os.Getenv("WBO_UID"))
+	if err != nil {
+		return nil
+	}
+	shopID, err := strconv.Atoi(os.Getenv("WBO_SHOP_ID"))
+	if err != nil {
+		return nil
+	}
+	return NewClient(uid, os.Getenv("WBO_API_USER"), os.Getenv("WBO_API_CODE"), shopID)
+}
+
 func (c *Client) do(action string, params map[string]string, v interface{}) error {
 	req, err := http.NewRequest("POST", host, nil)
 	if err != nil {
 		return err
 	}
+
 	q := req.URL.Query()
 	q.Add("UID", fmt.Sprint(c.uid))
 	q.Add("apiUSER", c.user)
@@ -42,9 +57,11 @@ func (c *Client) do(action string, params map[string]string, v interface{}) erro
 	q.Add("apiShopID", fmt.Sprint(c.shopID))
 	q.Add("apiACTION", action)
 	q.Add("output", "xml")
+
 	for key, value := range params {
 		q.Add(key, value)
 	}
+
 	req.URL.RawQuery = q.Encode()
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
