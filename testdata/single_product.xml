@@ -1,0 +1,97 @@
+<items>
+  <item>
+    <artikel_nr>AP%2B2023</artikel_nr>
+    <artikel_name>2023er Apprizzi</artikel_name>
+    <artikel_beschreibung>Perlwein 0,75l</artikel_beschreibung>
+    <artikel_jahrgang>2023</artikel_jahrgang>
+    <artikel_sorte/>
+    <artikel_qualitaet>Deutscher Wein</artikel_qualitaet>
+    <artikel_geschmack>trocken</artikel_geschmack>
+    <artikel_zucker>21.4</artikel_zucker>
+    <artikel_alkohol>11.7 </artikel_alkohol>
+    <artikel_saeure>7.9</artikel_saeure>
+    <artikel_liter>0.75</artikel_liter>
+    <artikel_gewicht>1.2</artikel_gewicht>
+    <artikel_sulfite>1</artikel_sulfite>
+    <artikel_bild/>
+    <artikel_bild_big/>
+    <artikel_bild_2/>
+    <artikel_bild_big_2/>
+    <artikel_bild_3/>
+    <artikel_bild_big_3/>
+    <artikel_bild_4/>
+    <artikel_bild_big_4/>
+    <artikel_bild_winestro/>
+    <artikel_bild2_winestro/>
+    <artikel_bild3_winestro/>
+    <artikel_bild4_winestro/>
+    <artikel_nuancen>a:0:{}</artikel_nuancen>
+    <artikel_auszeichnungen>a:0:{}</artikel_auszeichnungen>
+    <artikel_versandzahl>1</artikel_versandzahl>
+    <artikel_sort_anzahl/>
+    <artikel_preis>7.9</artikel_preis>
+    <artikel_streichpreis/>
+    <artikel_shopnotiz>fruchtiger Perlwein, spritzig und explosiv
+</artikel_shopnotiz>
+    <artikel_literpreis>10.533333333333</artikel_literpreis>
+    <artikel_mwst>19.00</artikel_mwst>
+    <artikel_brennwert>77.10</artikel_brennwert>
+    <artikel_brennwert_joule>322.59</artikel_brennwert_joule>
+    <artikel_allergene>0</artikel_allergene>
+    <artikel_eiweiss>&amp;lt;0.5</artikel_eiweiss>
+    <artikel_versandfrei>0</artikel_versandfrei>
+    <artikel_keinliterpreis>0</artikel_keinliterpreis>
+    <artikel_fuellgewicht>0</artikel_fuellgewicht>
+    <artikel_kilopreis>0</artikel_kilopreis>
+    <artikel_ausgetrunken>false</artikel_ausgetrunken>
+    <artikel_apnr>6624</artikel_apnr>
+    <artikel_expertise>0</artikel_expertise>
+    <artikel_boden/>
+    <artikel_notiz/>
+    <artikel_lage/>
+    <artikel_kategorie>k.A.</artikel_kategorie>
+    <artikel_anbaugebiet/>
+    <artikel_trinktemperatur/>
+    <artikel_ausbau/>
+    <artikel_lagerfaehigkeit/>
+    <artikel_trinkreife/>
+    <artikel_typ>Winzersekte und Perlweine</artikel_typ>
+    <artikel_typ_id>6</artikel_typ_id>
+    <artikel_farbe/>
+    <artikel_videolink/>
+    <artikel_zutaten/>
+    <artikel_mhd/>
+    <artikel_fett>&amp;lt;0.5</artikel_fett>
+    <artikel_fetts>&amp;lt;0.1</artikel_fetts>
+    <artikel_kohlenhydrate>29</artikel_kohlenhydrate>
+    <artikel_salz>&amp;lt;0.1</artikel_salz>
+    <artikel_ballast>&amp;lt;0.1g</artikel_ballast>
+    <artikel_vitamine/>
+    <artikel_frei_schwefelsaeure>56</artikel_frei_schwefelsaeure>
+    <artikel_gesamt_schwefelsaeure>177</artikel_gesamt_schwefelsaeure>
+    <artikel_histamin/>
+    <artikel_glycerin>7,6</artikel_glycerin>
+    <artikel_labeltext/>
+    <artikel_land/>
+    <artikel_region/>
+    <artikel_anbaugebiete/>
+    <artikel_bestand_warnung_ab>20</artikel_bestand_warnung_ab>
+    <artikel_erzeuger>0</artikel_erzeuger>
+    <artikel_erzeuger_name>Weingut Gres, Ingelheimer Str. 6, DE-55437, Appenheim</artikel_erzeuger_name>
+    <artikel_erzeuger_nummer/>
+    <artikel_erzeuger_text>Erzeugerabfüllung</artikel_erzeuger_text>
+    <artikel_verpackung>1</artikel_verpackung>
+    <artikel_verpackung_bezeichnung>Flasche</artikel_verpackung_bezeichnung>
+    <artikel_verpackung_inhalt>6</artikel_verpackung_inhalt>
+    <artikel_ean13>4260163171665</artikel_ean13>
+    <artikel_ean13_kiste>4260163172662</artikel_ean13_kiste>
+    <artikel_zimmer_typ>0</artikel_zimmer_typ>
+    <artikel_qr>https://winestro.info/?s=qbuf7</artikel_qr>
+    <artikel_bestand>1039</artikel_bestand>
+    <artikel_bestand_webshop>1039</artikel_bestand_webshop>
+    <artikel_warengruppen>
+      <warengruppe>Webshop</warengruppe>
+    </artikel_warengruppen>
+    <artikel_warengruppen_static>Webshop,</artikel_warengruppen_static>
+  </item>
+</items>
