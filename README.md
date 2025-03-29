@@ -1,6 +1,6 @@
 # go-winestro
 
-Simple Go wrapper around the [WINESTRO XML API](https://nephele-s5.de/DEVCENTER/docs/xml_21.0.php).
+Simple Go wrapper around the [WINESTRO XML API](https://nephele-s5.de/DEVCENTER/docs/xml_22.0.php).
 
 ## Go Get
 To get the package, execute:

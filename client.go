@@ -10,26 +10,37 @@ import (
 	"time"
 )
 
-const host = "https://weinstore.net/xml/v21.0/wbo-API.php"
+const host = "https://weinstore.net/xml/v22.0/wbo-API.php"
+
+type Config struct {
+	UID    int    `mapstructure:"uid" structs:"uid" json:"uid" jsonschema:"title=User ID,description=Identifies the Winestro tenant.,example=1000" env:"WBO_UID"`
+	User   string `mapstructure:"api_user" structs:"api_user" json:"user" jsonschema:"title=API user,description=The API user name.,example=apiuser-1000" env:"WBO_API_USER"`
+	Code   string `mapstructure:"api_code" structs:"api_code" json:"code" jsonschema:"title=API code,description=The API user secret." env:"WBO_API_CODE"`
+	ShopID int    `mapstructure:"shop_id" structs:"shop_id" json:"shop_id" jsonschema:"title=Shop ID,description=Identifies the shop.,example=1" env:"WBO_SHOP_ID"`
+}
 
 type Client struct {
 	httpClient *http.Client
-	uid        int
-	user       string
-	code       string
-	shopID     int
+	config     *Config
 }
 
-func NewClient(uid int, user string, code string, shopID int) *Client {
+func NewClientFromConfig(config *Config) *Client {
 	return &Client{
 		httpClient: &http.Client{
 			Timeout: 10 * time.Second,
 		},
-		uid:    uid,
-		user:   user,
-		code:   code,
-		shopID: shopID,
+		config: config,
 	}
+}
+
+func NewClient(uid int, user string, code string, shopID int) *Client {
+	return NewClientFromConfig(&Config{
+		UID:    uid,
+		User:   user,
+		Code:   code,
+		ShopID: shopID,
+	})
+
 }
 
 func NewClientFromEnv() *Client {
@@ -51,10 +62,10 @@ func (c *Client) do(action string, params map[string]string, v interface{}) erro
 	}
 
 	q := req.URL.Query()
-	q.Add("UID", fmt.Sprint(c.uid))
-	q.Add("apiUSER", c.user)
-	q.Add("apiCODE", c.code)
-	q.Add("apiShopID", fmt.Sprint(c.shopID))
+	q.Add("UID", fmt.Sprint(c.config.UID))
+	q.Add("apiUSER", c.config.User)
+	q.Add("apiCODE", c.config.Code)
+	q.Add("apiShopID", fmt.Sprint(c.config.ShopID))
 	q.Add("apiACTION", action)
 	q.Add("output", "xml")
 

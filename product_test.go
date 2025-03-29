@@ -12,7 +12,18 @@ func TestParseSingleProduct(t *testing.T) {
 	decodeXMLFile(t, "single_product.xml", &resp)
 	p := resp.Products[0]
 
-	assert.Equal(t, "AP+2023", p.Number)
-	assert.Equal(t, "<0.5", p.Fat)
+	assert.Equal(t, "5+2024", p.SKU)
+	assert.Equal(t, "< 0.5", p.Fat)
 	assert.NotEmpty(t, p.ProductGroups)
+}
+
+func TestParseBundle(t *testing.T) {
+	resp := winestro.ProductResp{}
+	decodeXMLFile(t, "bundle_product.xml", &resp)
+	p := resp.Products[0]
+
+	assert.Equal(t, "PR-FJ+2025", p.SKU)
+	assert.NotEmpty(t, p.BundleItems)
+
+	assert.Equal(t, "5+2023", p.BundleItems[0].SKU)
 }

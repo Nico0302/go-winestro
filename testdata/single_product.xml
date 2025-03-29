@@ -1,27 +1,27 @@
 <items>
   <item>
-    <artikel_nr>AP%2B2023</artikel_nr>
-    <artikel_name>2023er Apprizzi</artikel_name>
-    <artikel_beschreibung>Perlwein 0,75l</artikel_beschreibung>
-    <artikel_jahrgang>2023</artikel_jahrgang>
-    <artikel_sorte/>
-    <artikel_qualitaet>Deutscher Wein</artikel_qualitaet>
-    <artikel_geschmack>trocken</artikel_geschmack>
-    <artikel_zucker>21.4</artikel_zucker>
-    <artikel_alkohol>11.7 </artikel_alkohol>
-    <artikel_saeure>7.9</artikel_saeure>
+    <artikel_nr>5%2B2024</artikel_nr>
+    <artikel_name>2024er Weißherbst Blauer Portugieser</artikel_name>
+    <artikel_beschreibung>Qualitätswein mild 0,75l</artikel_beschreibung>
+    <artikel_jahrgang>2024</artikel_jahrgang>
+    <artikel_sorte>Blauer Portugieser</artikel_sorte>
+    <artikel_qualitaet>Qualitätswein</artikel_qualitaet>
+    <artikel_geschmack>mild</artikel_geschmack>
+    <artikel_zucker>26.4</artikel_zucker>
+    <artikel_alkohol>10</artikel_alkohol>
+    <artikel_saeure>6.2</artikel_saeure>
     <artikel_liter>0.75</artikel_liter>
     <artikel_gewicht>1.2</artikel_gewicht>
     <artikel_sulfite>1</artikel_sulfite>
-    <artikel_bild/>
-    <artikel_bild_big/>
+    <artikel_bild>https://nephele-s5.de/bilder/small/2025-02-08-18-45-54-3608-.png</artikel_bild>
+    <artikel_bild_big>https://nephele-s5.de/bilder/big/2025-02-08-18-45-54-3608-.png</artikel_bild_big>
     <artikel_bild_2/>
     <artikel_bild_big_2/>
     <artikel_bild_3/>
     <artikel_bild_big_3/>
     <artikel_bild_4/>
     <artikel_bild_big_4/>
-    <artikel_bild_winestro/>
+    <artikel_bild_winestro>https://nephele-s5.de/bilder/winestro/2025-02-08-18-45-54-3608-.png</artikel_bild_winestro>
     <artikel_bild2_winestro/>
     <artikel_bild3_winestro/>
     <artikel_bild4_winestro/>
@@ -29,23 +29,24 @@
     <artikel_auszeichnungen>a:0:{}</artikel_auszeichnungen>
     <artikel_versandzahl>1</artikel_versandzahl>
     <artikel_sort_anzahl/>
-    <artikel_preis>7.9</artikel_preis>
+    <artikel_preis>7.3</artikel_preis>
     <artikel_streichpreis/>
-    <artikel_shopnotiz>fruchtiger Perlwein, spritzig und explosiv
-</artikel_shopnotiz>
-    <artikel_literpreis>10.533333333333</artikel_literpreis>
+    <artikel_shopnotiz>Roséwein von spritzig milder Art</artikel_shopnotiz>
+    <artikel_literpreis>9.7333333333333</artikel_literpreis>
     <artikel_mwst>19.00</artikel_mwst>
-    <artikel_brennwert>77.10</artikel_brennwert>
-    <artikel_brennwert_joule>322.59</artikel_brennwert_joule>
-    <artikel_allergene>0</artikel_allergene>
-    <artikel_eiweiss>&amp;lt;0.5</artikel_eiweiss>
+    <artikel_brennwert>68</artikel_brennwert>
+    <artikel_brennwert_joule>284</artikel_brennwert_joule>
+    <artikel_allergene/>
+    <artikel_eiweiss>&amp;lt; 0.5</artikel_eiweiss>
     <artikel_versandfrei>0</artikel_versandfrei>
     <artikel_keinliterpreis>0</artikel_keinliterpreis>
     <artikel_fuellgewicht>0</artikel_fuellgewicht>
     <artikel_kilopreis>0</artikel_kilopreis>
     <artikel_ausgetrunken>false</artikel_ausgetrunken>
-    <artikel_apnr>6624</artikel_apnr>
+    <artikel_apnr/>
     <artikel_expertise>0</artikel_expertise>
+    <artikel_labellink>https://winestro.info/?s=co8iyzj1</artikel_labellink>
+    <artikel_elabel_extern>https://winestro.info/?s=co8iyzj1</artikel_elabel_extern>
     <artikel_boden/>
     <artikel_notiz/>
     <artikel_lage/>
@@ -55,22 +56,24 @@
     <artikel_ausbau/>
     <artikel_lagerfaehigkeit/>
     <artikel_trinkreife/>
-    <artikel_typ>Winzersekte und Perlweine</artikel_typ>
-    <artikel_typ_id>6</artikel_typ_id>
+    <artikel_typ>Gutsweine Rot- und Roséweine</artikel_typ>
+    <artikel_typ_id>5</artikel_typ_id>
+    <artikel_typ_beschreibung/>
     <artikel_farbe/>
     <artikel_videolink/>
-    <artikel_zutaten/>
+    <artikel_zutaten>Trauben, Saccharose, Stabilisator: Metaweinsäure, unter Schutzatmosphäre abgefüllt</artikel_zutaten>
     <artikel_mhd/>
-    <artikel_fett>&amp;lt;0.5</artikel_fett>
-    <artikel_fetts>&amp;lt;0.1</artikel_fetts>
-    <artikel_kohlenhydrate>29</artikel_kohlenhydrate>
-    <artikel_salz>&amp;lt;0.1</artikel_salz>
-    <artikel_ballast>&amp;lt;0.1g</artikel_ballast>
+    <artikel_fett>&amp;lt; 0.5</artikel_fett>
+    <artikel_fetts>&amp;lt; 0.1</artikel_fetts>
+    <artikel_kohlenhydrate>34</artikel_kohlenhydrate>
+    <artikel_salz>&amp;lt; 0.01</artikel_salz>
+    <artikel_ballast/>
     <artikel_vitamine/>
-    <artikel_frei_schwefelsaeure>56</artikel_frei_schwefelsaeure>
-    <artikel_gesamt_schwefelsaeure>177</artikel_gesamt_schwefelsaeure>
+    <artikel_frei_schwefelsaeure>55</artikel_frei_schwefelsaeure>
+    <artikel_gesamt_schwefelsaeure>164</artikel_gesamt_schwefelsaeure>
     <artikel_histamin/>
-    <artikel_glycerin>7,6</artikel_glycerin>
+    <artikel_glycerin>7,9</artikel_glycerin>
+    <artikel_weinstock>0</artikel_weinstock>
     <artikel_labeltext/>
     <artikel_land/>
     <artikel_region/>
@@ -80,18 +83,29 @@
     <artikel_erzeuger_name>Weingut Gres, Ingelheimer Str. 6, DE-55437, Appenheim</artikel_erzeuger_name>
     <artikel_erzeuger_nummer/>
     <artikel_erzeuger_text>Erzeugerabfüllung</artikel_erzeuger_text>
+    <artikel_erzeuger_firma>Weingut Gres</artikel_erzeuger_firma>
+    <artikel_erzeuger_adresse>Ingelheimer Str. 6, DE-55437, Appenheim</artikel_erzeuger_adresse>
     <artikel_verpackung>1</artikel_verpackung>
     <artikel_verpackung_bezeichnung>Flasche</artikel_verpackung_bezeichnung>
     <artikel_verpackung_inhalt>6</artikel_verpackung_inhalt>
-    <artikel_ean13>4260163171665</artikel_ean13>
-    <artikel_ean13_kiste>4260163172662</artikel_ean13_kiste>
+    <artikel_ean13>4260163171757</artikel_ean13>
+    <artikel_ean13_kiste>4260163172754</artikel_ean13_kiste>
     <artikel_zimmer_typ>0</artikel_zimmer_typ>
-    <artikel_qr>https://winestro.info/?s=qbuf7</artikel_qr>
-    <artikel_bestand>1039</artikel_bestand>
-    <artikel_bestand_webshop>1039</artikel_bestand_webshop>
+    <artikel_qr>https://winestro.info/?s=co8iyzj1</artikel_qr>
+    <artikel_bestand>1794</artikel_bestand>
+    <artikel_bestand_webshop>1794</artikel_bestand_webshop>
+    <artikel_bestand_firmenverbund/>
+    <artikel_last_modified>2025-03-28 00:13:17</artikel_last_modified>
     <artikel_warengruppen>
-      <warengruppe>Webshop</warengruppe>
+      <warengruppe>Flaschenwein</warengruppe>
     </artikel_warengruppen>
-    <artikel_warengruppen_static>Webshop,</artikel_warengruppen_static>
+    <artikel_warengruppen_static>Flaschenwein</artikel_warengruppen_static>
+    <artikel_warengruppen_kategorien>
+      <warengruppe_kategorie>
+        <warengruppen_kategorie_nr>1</warengruppen_kategorie_nr>
+        <warengruppe_kategorie_name>Standard</warengruppe_kategorie_name>
+        <warengruppe_kategorie_beschreibung>Default-Gruppe</warengruppe_kategorie_beschreibung>
+      </warengruppe_kategorie>
+    </artikel_warengruppen_kategorien>
   </item>
 </items>
