@@ -13,6 +13,7 @@ func TestParseSingleProduct(t *testing.T) {
 	p := resp.Products[0]
 
 	assert.Equal(t, "5+2024", p.SKU)
+	assert.Equal(t, "Weißherbst Blauer Portugieser", p.Name)
 	assert.Equal(t, "< 0.5", p.Fat)
 	assert.NotEmpty(t, p.ProductGroups)
 }
@@ -23,6 +24,7 @@ func TestParseBundle(t *testing.T) {
 	p := resp.Products[0]
 
 	assert.Equal(t, "PR-FJ+2025", p.SKU)
+	assert.Equal(t, "Probepaket Terroir & Classic", p.Name)
 	assert.NotEmpty(t, p.BundleItems)
 
 	assert.Equal(t, "5+2023", p.BundleItems[0].SKU)

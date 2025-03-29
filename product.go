@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"html"
 	"net/url"
+	"regexp"
 	"time"
 )
 
@@ -120,6 +121,9 @@ func (p *Product) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	if err != nil {
 		return err
 	}
+
+	nameReg := regexp.MustCompile(`^\d+er\s+`)
+	v.Name = nameReg.ReplaceAllString(v.Name, "")
 
 	v.Fat = html.UnescapeString(v.Fat)
 	v.UnsaturatedFat = html.UnescapeString(v.UnsaturatedFat)
