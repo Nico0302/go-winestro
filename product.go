@@ -5,9 +5,27 @@ import (
 	"fmt"
 	"html"
 	"net/url"
-	"regexp"
 	"time"
 )
+
+type date time.Time
+
+func (t *date) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
+	var s string
+	if s == "false" {
+		*t = date(time.Time{})
+		return nil
+	}
+	if err := d.DecodeElement(&s, &start); err != nil {
+		return err
+	}
+	parsedTime, err := time.Parse("2006-01-02", s)
+	if err != nil {
+		return err
+	}
+	*t = date(parsedTime)
+	return nil
+}
 
 type timestamp time.Time
 
@@ -40,8 +58,8 @@ type Product struct {
 	Sugar              string       `xml:"artikel_zucker" json:"sugar"`
 	Alcohol            string       `xml:"artikel_alkohol" json:"alcohol"`
 	Acid               string       `xml:"artikel_saeure" json:"acid"`
-	Volume             string       `xml:"artikel_liter" json:"volume"`
-	Weight             string       `xml:"artikel_gewicht" json:"weight"`
+	VolumeLiter        float32      `xml:"artikel_liter" json:"volume_liter"`
+	WeightKg           float32      `xml:"artikel_gewicht" json:"weight"`
 	Sulfites           bool         `xml:"artikel_sulfite" json:"sulfites"`
 	Picture            string       `xml:"artikel_bild" json:"picture"`
 	PictureLarge       string       `xml:"artikel_bild_big" json:"picture_large"`
@@ -60,9 +78,9 @@ type Product struct {
 	Protein            string       `xml:"artikel_eiweiss" json:"protein"`
 	FreeShipping       bool         `xml:"artikel_versandfrei" json:"free_shipping"`
 	HidePriceLiter     bool         `xml:"artikel_keinliterpreis" json:"hide_price_liter"`
-	FillWeight         int          `xml:"artikel_fuellgewicht" json:"fill_weight"`
+	FillWeightGram     int          `xml:"artikel_fuellgewicht" json:"fill_weight_gram"`
 	PriceKg            float32      `xml:"artikel_kilopreis" json:"price_kg"`
-	OutOfStockDate     string       `xml:"artikel_ausgetrunken" json:"out_of_stock_date"`
+	OutOfStockDate     date         `xml:"artikel_ausgetrunken" json:"out_of_stock_date"`
 	APNR               string       `xml:"artikel_apnr" json:"apnr"`
 	Vineyard           string       `xml:"artikel_lage" json:"vineyardn"`
 	Expertise          string       `xml:"artikel_expertise" json:"expertise"`
@@ -106,7 +124,7 @@ type Product struct {
 	Stock              float32      `xml:"artikel_bestand" json:"stock"`
 	CompanyStock       float32      `xml:"artikel_bestand_firmenverbund" json:"company_stock"`
 	WebshopStock       float32      `xml:"artikel_bestand_webshop" json:"webshop_stock"`
-	LastModified       timestamp    `xml:"artikel_last_modified" json:"last_modified"`
+	LastModifiedDate   timestamp    `xml:"artikel_last_modified" json:"last_modified_date"`
 }
 
 func (p *Product) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
@@ -121,9 +139,6 @@ func (p *Product) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	if err != nil {
 		return err
 	}
-
-	nameReg := regexp.MustCompile(`^\d+er\s+`)
-	v.Name = nameReg.ReplaceAllString(v.Name, "")
 
 	v.Fat = html.UnescapeString(v.Fat)
 	v.UnsaturatedFat = html.UnescapeString(v.UnsaturatedFat)
