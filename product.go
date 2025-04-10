@@ -8,25 +8,6 @@ import (
 	"time"
 )
 
-type date time.Time
-
-func (t *date) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
-	var s string
-	if s == "false" {
-		*t = date(time.Time{})
-		return nil
-	}
-	if err := d.DecodeElement(&s, &start); err != nil {
-		return err
-	}
-	parsedTime, err := time.Parse("2006-01-02", s)
-	if err != nil {
-		return err
-	}
-	*t = date(parsedTime)
-	return nil
-}
-
 type timestamp time.Time
 
 func (t *timestamp) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
@@ -80,7 +61,7 @@ type Product struct {
 	HidePriceLiter     bool         `xml:"artikel_keinliterpreis" json:"hide_price_liter"`
 	FillWeightGram     int          `xml:"artikel_fuellgewicht" json:"fill_weight_gram"`
 	PriceKg            float32      `xml:"artikel_kilopreis" json:"price_kg"`
-	OutOfStockDate     date         `xml:"artikel_ausgetrunken" json:"out_of_stock_date"`
+	OutOfStock         bool         `xml:"artikel_ausgetrunken" json:"out_of_stock"`
 	APNR               string       `xml:"artikel_apnr" json:"apnr"`
 	Vineyard           string       `xml:"artikel_lage" json:"vineyardn"`
 	Expertise          string       `xml:"artikel_expertise" json:"expertise"`
