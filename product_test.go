@@ -13,7 +13,7 @@ func TestParseSingleProduct(t *testing.T) {
 	p := resp.Products[0]
 
 	assert.Equal(t, "5+2024", p.SKU)
-	assert.Equal(t, "Weißherbst Blauer Portugieser", p.Name)
+	assert.Equal(t, "2024er Weißherbst Blauer Portugieser", p.Name)
 	assert.Equal(t, "< 0.5", p.Fat)
 	assert.NotEmpty(t, p.ProductGroups)
 }
